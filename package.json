@@ -1,0 +1,26 @@
+{
+	"name": "skill-icons",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "node dev.js",
+		"build": "node build.js",
+		"smoke": "node scripts/smoke.js",
+		"lint": "eslint .",
+		"test": "node build.js && vitest run",
+		"predeploy": "node build.js",
+		"deploy": "wrangler deploy",
+		"format": "prettier --write .",
+		"format:check": "prettier --check ."
+	},
+	"devDependencies": {
+		"chokidar": "^3.5.3",
+		"eslint": "^9.39.2",
+		"eslint-config-prettier": "^10.1.8",
+		"miniflare": "^2.3.0",
+		"prettier": "^2.5.1",
+		"vitest": "^4.0.16",
+		"wrangler": "^4.0.0"
+	}
+}
